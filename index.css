@@ -1,0 +1,151 @@
+:root {
+  --primary: #ff4b2b;
+  --secondary: #ff416c;
+  --light: #fff;
+  --gray: #f5f5f5;
+  --shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  font-size: large;
+  top: 0;
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 80vw;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https:/images.unsplash.com/photo-1504674900247-0877df9cc836");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light);
+}
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.3rem;
+}
+.hero a {
+  background-color: var(--primary);
+  padding: 1.2rem 2.2rem;
+  border-radius: 35px;
+}
+.features {
+  background-color: var(--gray);
+  padding: 5rem;
+}
+.features-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 2rem;
+  max-width: 1200px;
+}
+
+.feature-card {
+  position: relative;
+  width: 100%;
+  background-color: var(--light);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+.feature-tag {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.5rem 1rem 1rem;
+  border-radius: 50px;
+  background: var(--primary);
+  color: var(--light);
+}
+.feature-card h3 {
+  color: var(--primary);
+}
+.dishes {
+  height: 5%;
+  text-align: center;
+  position: relative;
+}
+.dishes::after {
+  content: "";
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  height: 3px;
+  background: var(--primary);
+}
+
+.dishes1 {
+  background-color: var(--gray);
+  padding: 5rem;
+}
+.dishes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 2rem;
+  max-width: 1200px;
+}
+
+.dishes-card {
+  position: relative;
+  width: 100%;
+  background-color: var(--light);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+.dishes-tag {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.5rem 1rem 1rem;
+  border-radius: 50px;
+  background: var(--primary);
+  color: var(--light);
+}
+
+@media screen and (min-width:720px) {
+  .feature-card {
+    width: 25%;
+  }
+}
